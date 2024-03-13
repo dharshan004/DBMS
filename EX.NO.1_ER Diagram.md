@@ -22,6 +22,7 @@
 
 
 ### SQL DDL Schema 
+```
 CREATE TABLE BANK
 (
   Code INT NOT NULL,
@@ -61,6 +62,7 @@ CREATE TABLE ACCOUNT
   Type INT NOT NULL,
   PRIMARY KEY (Acct_no)
 );
+```
 
 ## RESULT 
 <div align="justify">
