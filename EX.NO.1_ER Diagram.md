@@ -18,9 +18,49 @@
 
 
 ### Relational model
+![image](https://github.com/dharshan004/DBMS/assets/119103799/86c1cd8e-8087-4a69-8e4a-7ccacc5a9e29)
 
 
 ### SQL DDL Schema 
+CREATE TABLE BANK
+(
+  Code INT NOT NULL,
+  Name INT NOT NULL,
+  Addr INT NOT NULL,
+  PRIMARY KEY (Code)
+);
+
+CREATE TABLE BANK_BRANCH
+(
+  Branch_no INT NOT NULL,
+  Addr INT NOT NULL,
+  PRIMARY KEY (Branch_no)
+);
+
+CREATE TABLE LOAN
+(
+  Loan_no INT NOT NULL,
+  Amount INT NOT NULL,
+  Type INT NOT NULL,
+  PRIMARY KEY (Loan_no)
+);
+
+CREATE TABLE CUSTOMER
+(
+  Phone INT NOT NULL,
+  Ssn INT NOT NULL,
+  Name INT NOT NULL,
+  Addr INT NOT NULL,
+  PRIMARY KEY (Ssn)
+);
+
+CREATE TABLE ACCOUNT
+(
+  Acct_no INT NOT NULL,
+  Balance INT NOT NULL,
+  Type INT NOT NULL,
+  PRIMARY KEY (Acct_no)
+);
 
 ## RESULT 
 <div align="justify">
