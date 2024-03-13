@@ -13,12 +13,56 @@
 5. Specify attributes unique, multivalued and composite attributes.
 
 ### ER Diagram 
+![image](https://github.com/DrUmaRaniV/DBMS/assets/119103799/4f0f9cf1-447e-4efc-a725-c29654446d41)
 
 
 ### Relational model
+![image](https://github.com/DrUmaRaniV/DBMS/assets/119103799/507492a1-2287-45f8-816c-f20417321f8a)
+
+
 
 
 ### SQL DDL Schema 
+CREATE TABLE BANK
+(
+  Code INT NOT NULL,
+  Name INT NOT NULL,
+  Addr INT NOT NULL,
+  PRIMARY KEY (Code)
+);
+
+CREATE TABLE BANK_BRANCH
+(
+  Branch_no INT NOT NULL,
+  Addr INT NOT NULL,
+  PRIMARY KEY (Branch_no)
+);
+
+CREATE TABLE LOAN
+(
+  Loan_no INT NOT NULL,
+  Amount INT NOT NULL,
+  Type INT NOT NULL,
+  PRIMARY KEY (Loan_no)
+);
+
+CREATE TABLE CUSTOMER
+(
+  Phone INT NOT NULL,
+  Ssn INT NOT NULL,
+  Name INT NOT NULL,
+  Addr INT NOT NULL,
+  PRIMARY KEY (Ssn)
+);
+
+CREATE TABLE ACCOUNT
+(
+  Acct_no INT NOT NULL,
+  Balance INT NOT NULL,
+  Type INT NOT NULL,
+  PRIMARY KEY (Acct_no)
+);
+
 
 ## RESULT 
 <div align="justify">
